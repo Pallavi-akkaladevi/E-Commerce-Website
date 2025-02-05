@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 1em;
+            color: #666;
+            margin: 5px 0;
+        }
+        .product-price {
+            font-size: 1.1em;
+            color: #333;
+            margin: 5px 0;
+        }
+        .add-to-cart-btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 600px) {
+            .product-card {
+                width: 100%;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px;">Men's Fashion Collection</h1>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQqPrT9RYxXcxwbh_03Evj8Wxm6sLPjdI0kXOhqENHt7R85DxkA64vtvLhCPTuvqNXVNNdfCSKHDUS9G4RZng-8zNoDffAATYhQBAcNGeGvSEfLRaWCQCz3&usqp=CAc" alt="Product 1">
+            </div>
+            <div class="product-title">Stylish Sports Jacket</div>
+            <div class="product-description">A comfortable and stylish sports jacket for your casual outings. Perfect for layering over t-shirts and jeans.</div>
+            <div class="product-price">$49.99</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRxpElhd2tjKHcY1d9YeBTCxt_OrD_qvDydpxA6Ob2qsOtBJToMhjyqqy_5JaBSqU1dNh1bmWScnCHG6wUiXEdQ1qWA9Kd3xvpExfjlTOAIsZSTlmHdweAJ&usqp=CAE" alt="Product 2">
+            </div>
+            <div class="product-title">Classic Button-Down Shirt</div>
+            <div class="product-description">A timeless, high-quality shirt perfect for both casual and semi-formal occasions. Available in various colors.</div>
+            <div class="product-price">$59.99</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQwlWswxYxwrTahKyjRCT1uzALP3j5DIJ9JTiV9fVF6OHwjsfSwgWKm1rlbxzxyLqPSx_4Xq9calPemcm2KBLJdT1EFjXBIlurqU2RbuEA&usqp=CAE" alt="Product 3">
+            </div>
+            <div class="product-title">Comfortable Slim Fit Jeans</div>
+            <div class="product-description">These slim fit jeans are a wardrobe essential. Perfect for pairing with casual or dressy tops.</div>
+            <div class="product-price">$69.99</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+</body>
+</html>

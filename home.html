@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section */
+        .hero {
+    background-image: url('shop.jpg'); /* Replace with your hero image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Ensures the hero section covers the full screen height */
+}
+
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.6em;
+            margin: 20px 0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #e67e22;
+        }
+
+        /* Product Highlights Section */
+        .product-highlights {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-item {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s;
+        }
+
+        .highlight-item:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .highlight-item h3 {
+            font-size: 1.6em;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #e67e22;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Fashion.</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fashion.html">Shop Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Fashion</h1>
+        <p>Step into the world of trends, style, and elegance. Explore the latest fashion collection and upgrade your wardrobe today!</p>
+        <a href="fashion.html" class="cta-btn">Shop Now</a>
+    </section>
+
+    <section class="product-highlights">
+        <div class="highlight-item">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTIKmtdD6teYQWmohWoZehOTnaIVjzUuCe_uT64TGn1WSX5zuSYe6RzaJapbJzmEIyr5kO5csHmJN9zNPKLyRFF_IWVIcHU&usqp=CAE" alt="Elegant Summer Dress">
+            <h3>Elegant Summer Dress</h3>
+            <p>Discover our latest collection of elegant summer dresses. Perfect for any occasion!</p>
+        </div>
+        <div class="highlight-item">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQZObgLrKjNjFz5k6z5E78dwcp1yHE9-wR-6VaqNHzCOtF84BUsM0TMwqa5i4ruFNexQ1GzUnr3oJRB6etCRmIfMIdDtfBidhn33tmjKUQ&usqp=CAE" alt="Product 3">
+            <h3>Trendy Blazer</h3>
+            <p>Stay stylish and chic with our trendy blazers. Ideal for professional or casual wear.</p>
+        </div>
+        <div class="highlight-item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQwlWswxYxwrTahKyjRCT1uzALP3j5DIJ9JTiV9fVF6OHwjsfSwgWKm1rlbxzxyLqPSx_4Xq9calPemcm2KBLJdT1EFjXBIlurqU2RbuEA&usqp=CAE" alt="Comfortable Slim Fit Jeans">
+            <h3>Comfortable Jeans</h3>
+            <p>Our jeans are made for ultimate comfort without compromising style. Perfect for any outfit!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fashion. All Rights Reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+</body>
+</html>

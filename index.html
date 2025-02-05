@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styling for the product cards */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 0.9em;
+            color: #777;
+            margin: 5px 0;
+            height: 50px;
+            overflow: hidden;
+        }
+        .product-price {
+            font-size: 1.1em;
+            color: #333;
+            margin: 5px 0;
+        }
+        .add-to-cart-btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Fashion.</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="gallery">
+            <button class="arrow left">❮</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_9N_vsbQ08MzJjAG_rPto4WoM9L5FXB5SMsag8-UFv3Guh2j9Ld5u6PnVbiLyNWUuZk&usqp=CAU" alt="Fashion Model 1" class="image-small">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqjzgzgffeXkY9pdrU5kr-3eDsjqrfHu7BwJOCq8BBHvQEF4VGHcBuIiSFF60uMXXwooA&usqp=CAU" alt="Fashion Model 2" class="image-large">
+            <img src="https://media.istockphoto.com/id/1462842122/photo/masculine-looking-beautiful-woman-in-a-leather-suit-is-jumping-in-front-of-a-brown-background.jpg?s=612x612&w=0&k=20&c=6jIEsLuJlKiSkastGmKgwYyV7O2oSuoP9XIIX0TuC7o=" alt="Fashion Model 3" class="image-small">
+            <button class="arrow right">❯</button>
+        </div>
+        <h2>Trend Fashion 2021</h2>
+        <button class="learn-more">Learn More</button>
+    </section>
+
+    <div class="product-container">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTIKmtdD6teYQWmohWoZehOTnaIVjzUuCe_uT64TGn1WSX5zuSYe6RzaJapbJzmEIyr5kO5csHmJN9zNPKLyRFF_IWVIcHU&usqp=CAE" alt="Elegant Summer Dress">
+            </div>
+            <div class="product-title">Elegant Summer Dress</div>
+            <div class="product-description">A stylish and comfortable dress perfect for hot summer days. Light and breathable fabric that keeps you cool.</div>
+            <div class="product-price">$49.99</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQwlWswxYxwrTahKyjRCT1uzALP3j5DIJ9JTiV9fVF6OHwjsfSwgWKm1rlbxzxyLqPSx_4Xq9calPemcm2KBLJdT1EFjXBIlurqU2RbuEA&usqp=CAE" alt="Comfortable Slim Fit Jeans">
+            </div>
+            <div class="product-title">Comfortable Slim Fit Jeans</div>
+            <div class="product-description">These slim fit jeans are a wardrobe essential. Perfect for pairing with casual or dressy tops.</div>
+            <div class="product-price">$69.99</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQZObgLrKjNjFz5k6z5E78dwcp1yHE9-wR-6VaqNHzCOtF84BUsM0TMwqa5i4ruFNexQ1GzUnr3oJRB6etCRmIfMIdDtfBidhn33tmjKUQ&usqp=CAE" alt="Product 3">
+            </div>
+            <div class="product-title">Trendy Blazer</div>
+            <div class="product-description">Sleek and modern blazer for a sharp look. Wear it to the office or a night out.</div>
+            <div class="product-price">$79.99</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <p>Total: $<span id="total-amount">0.00</span></p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
